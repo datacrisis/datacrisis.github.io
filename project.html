@@ -89,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+ <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./research.html" rel="" target="">
@@ -116,10 +116,18 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#leave-your-clothes-behind---lycb" id="toc-leave-your-clothes-behind---lycb" class="nav-link active" data-scroll-target="#leave-your-clothes-behind---lycb"><span class="header-section-number">1</span> Leave Your Clothes Behind - LYCB</a></li>
+  <li><a href="#activations-and-augmentations-pushing-the-performance-of-isotropic-convnets---convmixerxl" id="toc-activations-and-augmentations-pushing-the-performance-of-isotropic-convnets---convmixerxl" class="nav-link" data-scroll-target="#activations-and-augmentations-pushing-the-performance-of-isotropic-convnets---convmixerxl"><span class="header-section-number">2</span> Activations And Augmentations: Pushing The Performance Of Isotropic ConvNets - ConvMixerXL</a></li>
+  <li><a href="#malaysias-first-machine-learning-hackathon-crash-course-for-teens---1stdayhack" id="toc-malaysias-first-machine-learning-hackathon-crash-course-for-teens---1stdayhack" class="nav-link" data-scroll-target="#malaysias-first-machine-learning-hackathon-crash-course-for-teens---1stdayhack"><span class="header-section-number">3</span> Malaysia’s First Machine Learning Hackathon + Crash Course for Teens - 1stDayHack</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -138,10 +146,67 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
+<p>For all things non-research related; also serving as the <code>"others"</code> bin of projects.</p>
+<p><br></p>
+<section id="leave-your-clothes-behind---lycb" class="level2 page-columns page-full" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="leave-your-clothes-behind---lycb"><span class="header-section-number">1</span> Leave Your Clothes Behind - LYCB</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/lycb_animation.gif" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Visualization of each stages of LYCB</figcaption>
+</figure>
+</div>
+<p><strong>Abstract</strong><br> The demand for assets in the virtual world as recently gained a lot of attention. We present a novel framework dubbed LYCB: Leave Your Clothes Behind that allows users to directly generate a 3D mesh object of garments from a monocular video using Neural Radiance fields. The proposed method fills the gap in literature by addressing issues such as accurately fitting on to foreign bodies for virtual try-ons and model complex cloth properties using Neural Radiance fields and physics-based simulations. This lets us transfer clothing type and bodies easily.</p>
+<p><strong>Github Repository</strong><br> <a href="https://github.com/IamShubhamGupto/LYCB">https://github.com/IamShubhamGupto/LYCB</a></p>
+<p><strong>Commentary</strong><br> A project for ECE-GY 7123 Deep Learning, done together with <a href="https://marroninstitute.nyu.edu/people/shubham-gupta">Shubham Gupta</a>.</p>
+<p>Basically, we were trying to extract a 3D mesh of arbitrary clothing from a given 2D monocular input sequence (e.g.&nbsp;video). Similar approaches exist such as <a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Zheng_Structured_Local_Radiance_Fields_for_Human_Avatar_Modeling_CVPR_2022_paper.pdf">Structured Local Radiance Fields for Human Avatar Modeling</a> where they tried to create clothed humans from monocular inputs in one-shot, and <a href="https://yfeng95.github.io/scarf/">SCARF</a> where they tried to implicitly disentangle the human body and garment meshes; both methods rely on implicit methods to render clothing deformations for each frame.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Feng, Yao, et al.&nbsp;“Capturing and animation of body and clothing from monocular video.” SIGGRAPH Asia 2022 Conference Papers. 2022.</p>
+</div><div class="">
+<p>Zheng, Zerong, et al.&nbsp;“Structured local radiance fields for human avatar modeling.” Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022.</p>
+</div></div>
+<p>The key differentiation of LYCB is to instead rely on battle-tested clothing physics simulator (e.g.&nbsp;Blender) to perform the deformation instead! The motivation behind this approach is simple - in order for virtual try-on applications to leverage such approaches for real-world scenarios, accurate fitting and clothing deformation will be vital! (Wouldn’t want to have a new piece of clothing arrive and end up having to return it because it simply does not fit as shown prior 😢).</p>
+<p>Obviously, our initial attempt (that was completed in ~3 weeks from end-to-end) is very rough still. For example, the rendered mesh is not very clean and inherits unwanted deformation from the input footage; key takeaway is that there are much to be improved upon still!</p>
+<p>Regardless, we believe that such hybrid approaches of blending heuristic simulators for deformation + deep implicit methods would be a viable approach to build a virtual try-on platform where fit accuracy and consistency would be key (at least in the short term until we nail implicit clothing deformation physics!).</p>
+<p><br></p>
+</section>
+<section id="activations-and-augmentations-pushing-the-performance-of-isotropic-convnets---convmixerxl" class="level2 page-columns page-full" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="activations-and-augmentations-pushing-the-performance-of-isotropic-convnets---convmixerxl"><span class="header-section-number">2</span> Activations And Augmentations: Pushing The Performance Of Isotropic ConvNets - ConvMixerXL</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/convmixer_xl_pipeline.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Pipeline of ConvMixerXL - simpler a larger ConvMixer</figcaption>
+</figure>
+</div>
+<p><strong>Abstract</strong><br> This project focuses on improving the performance of isotropic Convolutional Neural Networks (ConvNets) for computer vision tasks. Specifically, we experiment with training a ConvMixerXL model on the CIFAR-10 dataset. ConvMixerXL is an extended version of the ConvMixer architecture, consisting of 66 layers and approximately 5 million parameters. To optimize the performance of ConvMixerXL, we conducted an ablation study where we explored different configurations of the architecture, as well as various augmentations and activation functions. Through our experiments, we found that applying augmentations and using the Swish (SiLU) activation function for deeper models yielded the best results. We achieved a top-1 accuracy of 94.52%.</p>
+<p><strong>Github Repository</strong><br> <a href="https://github.com/datacrisis/ConvMixerXL">https://github.com/datacrisis/ConvMixerXL</a></p>
+<p><strong>Commentary</strong><br> This project was undertaken as part of the midterm project course ECE-GY 7123 Deep Learning, done together with <a href="https://marroninstitute.nyu.edu/people/shubham-gupta">Shubham Gupta</a>. The primary objective is to improve upon the state-of-the-art isotropic ConvMixer architecture (published in the paper: <a href="https://arxiv.org/abs/2201.09792">Patches Are All You Need?</a>) for multiclass classification tasks.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>Trockman, Asher, and J. Zico Kolter. “Patches are all you need?.” arXiv preprint arXiv:2201.09792 (2022).</p>
+</div></div><p>It’s nothing at all fancy, we had to work in accordance to the allowed tweaks and constraints outlined by the course instructor, which does not lend itself to a great degree of technical freedom. The focus was on fine-tuning and optimizing the vanilla ConvMixer architecture, rather than introducing novel or complex modifications.</p>
+<p>Still, one thing that I am somewhat happy with is that my team and I pulled off the entire project and report writing within a week (and bagged a perfect score)! It’s not much, but it’s honest work. 🥔</p>
+</section>
+<section id="malaysias-first-machine-learning-hackathon-crash-course-for-teens---1stdayhack" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="malaysias-first-machine-learning-hackathon-crash-course-for-teens---1stdayhack"><span class="header-section-number">3</span> Malaysia’s First Machine Learning Hackathon + Crash Course for Teens - 1stDayHack</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/1stdayhack_slide.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Sample title slide from the 1stDayHack crash course (I think it’s pretty neat still 😎)</figcaption>
+</figure>
+</div>
+<p><strong>Abstract</strong><br> As delineated in the title, Malaysia’s First Machine Learning Hackathon + Crash Course targeted at teens in Malaysia (though this is from quite awhile ago!). Pulled it off together with 2 of my wonder accomplices, Edmond Yap and Chee Seng Leong!</p>
+<p>All in all, I would say it was a great success, as we were able to bring together 60+ teenagers from across Peninsular Malaysia to learn and create for one whole week. The hackathon went very well and the responses were amazing; though the students’ submissions were even cooler, despite the the short time they have had to pick up Python and concepts of Machine Learning on the go! Couldn’t have been more proud of them 😎.</p>
+<p><strong>Github Repository</strong><br> <a href="https://github.com/1stDayHack">https://github.com/1stDayHack</a></p>
+<p><strong>Notes and Lesson Materials</strong><br> <a href="https://funky-roadway-267.notion.site/1stDayHack-Learning-Area-d0ddffff0f4f429aba517ae8aaaf0148">My embarrassing notes</a></p>
+<p><strong>Commentary</strong><br> The motivation behind the initiative is basically me trying to get younger sister to learn about programming, Machine Learning concepts, and to provide her with a first hand experience with hackathons! Unfortunately, I’ve found that no such initiatives exist at the time in Malaysia, so I got together with two of my trusty friends and did it ourselves 👩‍🏫.</p>
+<p>I’m not really satisfied with the content and recording of the course (in fact, quite embarrassed by them still), as they are awfully boring, and are not as well structured and polished as I would like it to be.</p>
+<p>In defense of past-me, past-me did do everything on his own for the course contents and materials - writing the FirstDayKit (FDK) library, writing the script for video lessons, creating written course materials (notes, tutorials, etc), recording all the lesson videos, and publishing the whole thing in ~1 month, mostly late in the evening after work in his bedroom, so the quality of the end result is not very good and contents are rough around the edges. However, I’m happy to report that he’s a much better (I think) presenter and developer now!</p>
+<p>Regardless, it has been immensely satisfying overall and I’ll certainly be revisiting the project again in the future! Let’s aim for 200 participants this time?</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
