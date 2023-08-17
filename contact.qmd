@@ -1,7 +1,25 @@
 ---
-title: "Contact"
+# title: "Contact"
+number-sections: false
+format:
+    html:
+        toc: False
+        # grid:
+        #     margin-width: 150px
+        page-layout: full
 ---
 
-This is a Quarto website.
+<center><font size="8">**Email**</font></center>
+<center><font size="6">kl3866 [at] nyu [dot] edu</font></center>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<br>
+<br>
+
+<center><font size="8">**LinkedIn**</font></center>
+<center><font size="6">[https://www.linkedin.com/in/keiferlee/](https://www.linkedin.com/in/keiferlee/)</font></center>
+
+<br>
+<br>
+
+<center><font size="8">**Address**</font></center>
+<center><font size="6">6 MetroTech Center Brooklyn, NY 11201, USA</font></center>

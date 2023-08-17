@@ -1,5 +1,13 @@
 ---
-title: "About"
+# title: "Curriculum Vitae"
+format:
+    html:
+        toc: False
+        # grid:
+        #     margin-width: 150px
+        page-layout: full
 ---
 
-About this site
+<center>Here is a copy of my public CV. For more information, feel free to reach out to me and I'll be happy to chat ☕️</center><br>
+
+<center><iframe src="./resources/Unofficial_Keifer_Lee_Resume.pdf" title="CV" width="960" height="1080"></iframe></center>

@@ -1,7 +1,76 @@
 ---
-title: "Home"
+title: "The Right Place"
+number-sections: false
+format:
+    html:
+        toc: False
+        # grid:
+        #     margin-width: 150px
+        page-layout: full
 ---
 
-This is a Quarto website.
+<!-- # About Me -->
+:::: {.columns}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {.column width="25%"}
+![](resources/profile_ibm.jpg)
+
+:::
+
+::: {.column width="4%"}
+<!-- empty column to create gap -->
+:::
+
+::: {.column width="71%"}
+Hello there! 👋🏻
+
+My name is Keifer Lee, a MS student @ New York University for the moment.
+
+I'm originally from tropical Malaysia, where the people are varied and tasty foods are aplenty; while 🥯 bagels  are great, [Malaysian cuisines](https://migrationology.com/travel-destinations/malaysia-food-guide/) will always have a special place in my heart! 
+
+I also dabble in research as a Graduate Student Researcher at the [AI4CE Lab](https://ai4ce.github.io) @ New York University, working with Professor Chen Feng primarily on Robotic Perception and Novel View Synthesis. In the past, I had a blast working on Autonomous UAVs with Dr. Swee King Phang at Taylor's University as an undergraduate (good ol' times!). As a side quest 🗡, I've been exploring the realm of LLMs in my spare time.
+
+In terms of professional work, I was a Data Scientist @ MoneyLion for two exciting years (>$1B served annually) as part of the (amazing) Instacash team, and I had a blast this summer serving as a Data Science Intern at IBM's Chief Analytics Office (go CAO! 🇺🇸).
+
+I'll also be serving as a Teaching Assistant for the graduate Robot Perception (ROB-GY 6203) course for Fall 2023. If you're taking the course, feel free to reach out!
+:::
+
+::::
+
+
+## Chronological Milestones
+***Note**: If you are a time traveller, this may be of particular use to you.*
+
+- **September 2023**:
+    - Will be serving as a Teaching Assistant for the Robot Perception (ROB-GY 6203) in Fall 2023.
+- **May 2023**:
+    - Joined IBM in New York as a Data Science Intern, serving in the Chief Analytics Office. (where some of the best people I've ever met are at!)
+- **January 2023**:
+    - Worked as a Graduate Research Assistant (or a GSET in NYU-speak) on a Sim2Real project for an industrial partner with Professor Chen Feng and the AI4CE Lab.
+- **October 2022**:
+    - Joined the AI4CE Lab as a graduate student researcher.
+- **August 2022**:
+    - Concluded my tenureship at MoneyLion after 2 exciting years (my #1 team)!
+    - Packed my bags, hopped on a flight, and arrived at New York University to begin my graduate studies.
+- **January 2021**: 
+    - Organized and successfully completed 1stDayHack with over 60 middle schoolers from across Peninsula Malaysia! I'm still proud of all the participants for what they've achieved!🥇
+- **September 2020**: 
+    - Joined MoneyLion as a Data Scientist on the Instacash analytics team.
+- **March 2020**: 
+    - COVID-19 🦠 and nationwide lockdown in Malaysia. Lots of self-reflection and pivoting happened during this period!
+- **September 2019**: 
+    - Kickstarted a new initiative to organize Malaysia's first Machine Learning hackathon + online course for teens - [1stDayHack](https://github.com/1stDayHack)!
+- **August 2019**: 
+    - Awarded the *Best High Impact Research Award* @ 12th International Engineering Research Conference, Malaysia.
+    - Graduated and successfully registered as a Graduate Engineer with the Board of Engineers Malaysia.
+    - Somewhere along the way, I received the Dean's List Award 5 times, and netted 2 Book Prize awards.
+    - Joined the Taylor's Unmanned Aerial Vehicle Lab as a Research Engineer working on Autonomous UAV with Dr. Swee King Phang.
+- **May 2019**:
+    - Joined and won the *Best Social Impact Award* at the 2019 CodeathonX KL @ University Malaya.
+- **August 2018**:
+    - Joined and won 1st runner-up at the 2018 NASA SpaceApp Challenge.
+    - Awarded the *Best High Impact Research Award* @ 11th International Engineering Research Conference, Malaysia.
+- **March 2015**:
+    - Started my life as a (B.Eng. in Electrical and Electronic Engineering) undergraduate @ Taylor's University, Malaysia.
+- **13.7B BC**: 
+    - Beginning of time-ish.

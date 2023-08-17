@@ -1,7 +1,90 @@
 ---
 title: "Not Research"
+number-sections: True
 ---
 
-This is a Quarto website.
+For all things non-research related; also serving as the `"others"` bin of projects.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<br>
+
+## Leave Your Clothes Behind - LYCB
+
+![Visualization of each stages of LYCB](resources/lycb_animation.gif)
+
+**Abstract**<br>
+The demand for assets in the virtual world as recently gained a lot of attention. We present a novel framework dubbed LYCB: Leave Your Clothes Behind that allows users to directly generate a 3D mesh object of garments from a monocular video using Neural Radiance fields. The proposed method fills the gap in literature by addressing issues such as accurately fitting on to foreign bodies for virtual try-ons and model complex cloth properties using Neural Radiance fields and physics-based simulations. This lets us transfer clothing type and bodies easily.
+
+**Github Repository**<br>
+[https://github.com/IamShubhamGupto/LYCB](https://github.com/IamShubhamGupto/LYCB)
+
+**Commentary**<br>
+A project for ECE-GY 7123 Deep Learning, done together with [Shubham Gupta](https://marroninstitute.nyu.edu/people/shubham-gupta).
+
+Basically, we were trying to extract a 3D mesh of arbitrary clothing from a given 2D monocular input sequence (e.g. video). Similar approaches exist such as [Structured Local Radiance Fields for Human Avatar Modeling](https://openaccess.thecvf.com/content/CVPR2022/papers/Zheng_Structured_Local_Radiance_Fields_for_Human_Avatar_Modeling_CVPR_2022_paper.pdf) where they tried to create clothed humans from monocular inputs in one-shot, and [SCARF](https://yfeng95.github.io/scarf/) where they tried to implicitly disentangle the human body and garment meshes; both methods rely on implicit methods to render clothing deformations for each frame. 
+
+:::{.column-margin}
+Feng, Yao, et al. "Capturing and animation of body and clothing from monocular video." SIGGRAPH Asia 2022 Conference Papers. 2022.
+:::
+:::{.column-margin}
+Zheng, Zerong, et al. "Structured local radiance fields for human avatar modeling." Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition. 2022.
+:::
+
+The key differentiation of LYCB is to instead rely on battle-tested clothing physics simulator (e.g. Blender) to perform the deformation instead! The motivation behind this approach is simple - in order for virtual try-on applications to leverage such approaches for real-world scenarios, accurate fitting and clothing deformation will be vital! (Wouldn't want to have a new piece of clothing arrive and end up having to return it because it simply does not fit as shown prior 😢).
+
+Obviously, our initial attempt (that was completed in ~3 weeks from end-to-end) is very rough still. For example, the rendered mesh is not very clean and inherits unwanted deformation from the input footage; key takeaway is that there are much to be improved upon still! 
+
+Regardless, we believe that such hybrid approaches of blending heuristic simulators for deformation + deep implicit methods would be a viable approach to build a virtual try-on platform where fit accuracy and consistency would be key (at least in the short term until we nail implicit clothing deformation physics!).
+
+<br>
+
+## Activations And Augmentations: Pushing The Performance Of Isotropic ConvNets - ConvMixerXL
+
+![Pipeline of ConvMixerXL - simpler a larger ConvMixer](resources/convmixer_xl_pipeline.png)
+
+**Abstract**<br>
+This project focuses on improving the performance of isotropic Convolutional Neural Networks (ConvNets) for computer vision tasks. Specifically, we experiment with training a ConvMixerXL model on the CIFAR-10 dataset. ConvMixerXL is an extended version of the ConvMixer architecture, consisting of 66 layers and approximately 5 million parameters. To optimize the performance of ConvMixerXL, we conducted an ablation study where we explored different configurations of the architecture, as well as various augmentations and activation functions. Through our experiments, we found that applying augmentations and using the Swish (SiLU) activation function for deeper models yielded the best results. We achieved a top-1 accuracy of 94.52%.
+
+
+**Github Repository**<br>
+[https://github.com/datacrisis/ConvMixerXL](https://github.com/datacrisis/ConvMixerXL)
+
+
+**Commentary**<br>
+This project was undertaken as part of the midterm project course ECE-GY 7123 Deep Learning, done together with [Shubham Gupta](https://marroninstitute.nyu.edu/people/shubham-gupta). The primary objective is to improve upon the state-of-the-art isotropic ConvMixer architecture (published in the paper: [Patches Are All You Need?](https://arxiv.org/abs/2201.09792)) for multiclass classification tasks.
+
+:::{.column-margin}
+Trockman, Asher, and J. Zico Kolter. "Patches are all you need?." arXiv preprint arXiv:2201.09792 (2022).
+:::
+
+It's nothing at all fancy, we had to work in accordance to the allowed tweaks and constraints outlined by the course instructor, which does not lend itself to a great degree of technical freedom. The focus was on fine-tuning and optimizing the vanilla ConvMixer architecture, rather than introducing novel or complex modifications. 
+
+Still, one thing that I am somewhat happy with is that my team and I pulled off the entire project and report writing within a week (and bagged a perfect score)! It's not much, but it's honest work. 🥔
+    
+
+
+## Malaysia's First Machine Learning Hackathon + Crash Course for Teens - 1stDayHack
+
+![Sample title slide from the 1stDayHack crash course (I think it's pretty neat still 😎)](resources/1stdayhack_slide.png)
+
+**Abstract**<br>
+As delineated in the title, Malaysia's First Machine Learning Hackathon + Crash Course targeted at teens in Malaysia (though this is from quite awhile ago!). Pulled it off together with 2 of my wonder accomplices, Edmond Yap and Chee Seng Leong! 
+
+All in all, I would say it was a great success, as we were able to bring together 60+ teenagers from across Peninsular Malaysia to learn and create for one whole week. The hackathon went very well and the responses were amazing; though the students' submissions were even cooler, despite the the short time they have had to pick up Python and concepts of Machine Learning on the go! Couldn't have been more proud of them 😎.
+
+
+**Github Repository**<br>
+[https://github.com/1stDayHack](https://github.com/1stDayHack)
+
+
+**Notes and Lesson Materials**<br>
+[My embarrassing notes](https://funky-roadway-267.notion.site/1stDayHack-Learning-Area-d0ddffff0f4f429aba517ae8aaaf0148)
+
+
+**Commentary**<br>
+The motivation behind the initiative is basically me trying to get younger sister to learn about programming, Machine Learning concepts, and to provide her with a first hand experience with hackathons! Unfortunately, I've found that no such initiatives exist at the time in Malaysia, so I got together with two of my trusty friends and did it ourselves 👩‍🏫.
+
+I'm not really satisfied with the content and recording of the course (in fact, quite embarrassed by them still), as they are awfully boring, and are not as well structured and polished as I would like it to be.
+
+In defense of past-me, past-me did do everything on his own for the course contents and materials - writing the FirstDayKit (FDK) library, writing the script for video lessons, creating written course materials (notes, tutorials, etc), recording all the lesson videos, and publishing the whole thing in ~1 month, mostly late in the evening after work in his bedroom, so the quality of the end result is not very good and contents are rough around the edges. However, I'm happy to report that he's a much better (I think) presenter and developer now! 
+
+Regardless, it has been immensely satisfying overall and I'll certainly be revisiting the project again in the future! Let's aim for 200 participants this time?

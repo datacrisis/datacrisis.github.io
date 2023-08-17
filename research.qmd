@@ -1,7 +1,46 @@
 ---
 title: "Research"
+number-sections: True
 ---
 
-This is a Quarto website.
+This section is embarrassingly sparse as of now, please bear with me as I fill it up. If you would like to collaborate, please feel free to reach out anytime and I'll try to revert back (almost) ASAP. 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+My primary research interests lie in the following areas:
+
+1. Machine Perception, Planning, and Navigation
+2. Novel View Synthesis for Digital Asset Creation and World Building
+3. Explainable and Attributable AI
+
+<br>
+
+
+## Principled Approach Towards Optimal Neural Radiance Field Learning (Work in Progress)
+
+An on-going research project I'm co-leading at the AI4CE Lab as of now. The title above is simply my own interpretation of a working title and will likely be subject to changes. 
+
+Can't say much more for now, so stay tuned!
+
+<br>
+
+## Sim2Real for Robotic Manipulation
+
+A collaboration project between the AI4CE Lab and an industry partner working in robotic systems and their applications. I couldn't say much since the actual project is confidential unfortunately. However, we did manage to improve the baseline model's performance on key metrics tremendously via contrastive self-supervise approaches. 
+
+So instead, look at this funny GIF I found.
+
+<center>
+![](resources/funny_robot.gif) 
+</center>
+
+:::{.column-margin}
+I couldn't find the original source, so this is the best I can do for now - [https://bostondynamics.com](https://bostondynamics.com) and [https://i.imgur.com/YnrWZsL.gifv](https://i.imgur.com/YnrWZsL.gifv)
+:::
+
+<br>
+
+## Monocular Target Tracking for Autonomous UAV
+
+![Our test drone, Hornet-1 doing a fly-by to say "Hello!"](./resources/short_drone.gif)
+
+**Abstract**<br>
+My undergraduate project with the Taylor's Unmanned Aerial Vehicle Lab, Dr. Swee King Phang and Jun Jet Tai. The key objective is to develop an autonomous UAV capable of consistently track a given target during initialization. My main contributions are the development of a light-weight single target object-tracking algorithm that would be able of running at operational refresh rate (e.g. >30 FPS) on the light-weight single board computer.

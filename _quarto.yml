@@ -7,11 +7,13 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: CV
       - research.qmd
       - href: project.qmd
         text: Not Research
-      - contact.qmd
+      - href: contact.qmd
+        text: Contact
 
 
 format:
@@ -19,6 +21,7 @@ format:
     theme:
       light: cosmo
       dark: vapor
+    favicon: "resources/logo.jpg"
     css: styles.css
     toc: true
     html-math-method: katex
