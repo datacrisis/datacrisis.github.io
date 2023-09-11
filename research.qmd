@@ -5,14 +5,23 @@ number-sections: True
 
 This section is embarrassingly sparse as of now, please bear with me as I fill it up. If you would like to collaborate, please feel free to reach out anytime and I'll try to revert back (almost) ASAP. 
 
-My primary research interests lie in the following areas:
+My primary research interest can be summarized in this one sentence - <b><i>I want to research and develop robots to aid extraterrestrial exploration and colonization</b></i> (e.g. construction or exploration bots that will be widely use on Mars one day).
 
-1. Machine Perception, Planning, and Navigation
-2. Novel View Synthesis for Digital Asset Creation and World Building
-3. Explainable and Attributable AI
+:::{.column-margin}
+Though it sounds a bit far fetched, I think the idea has viable short-term commercial parallel as well! Also it may not be as far fetched upon further consideration since parties like SpaceX / NASA has been making great strides lately. 🚀
+:::
+
+:::{.column-body}
+![<a href=https://www.behance.net/gallery/67663807/Between-The-Red-Mountains-Project-of-City-on-Mars-CGI>Between The Red Mountains - Project of City on Mars</a> by Max Rymsha, 2018.](./resources/the_dream.jpg.webp)
+:::
+
+With the above idea in mind, the relevant tasks from an *applicative* point of view that I would like to tackle would be
+
+1. <b>Exploration</b> - Efficient exploration, robotic planning and navigation, multi-modal perception, etc.
+2. <b>Mapping</b> - Topological mapping, visual place recognition, neural mapping via NeRF (e.g. work like <a href=https://nerf-w.github.io>NeRF-in-the-wild</a> but with various constraints such as region-denial), etc. 
+3. <b>Terraforming and Construction</b> - Multi-agent coordination and collaboration, Sim2Real to teach robots to perform new tasks in an adhoc manner via simulation and efficient learning via expert demonstration for learning on-the-fly, robotics for construction, etc
 
 <br>
-
 
 ## Principled Approach Towards Optimal Neural Radiance Field Learning (Work in Progress)
 
@@ -24,7 +33,7 @@ Can't say much more for now, so stay tuned!
 
 ## Sim2Real for Robotic Manipulation
 
-A collaboration project between the AI4CE Lab and an industry partner working in robotic systems and their applications. I couldn't say much since the actual project is confidential unfortunately. However, we did manage to improve the baseline model's performance on key metrics tremendously via contrastive self-supervise approaches. 
+A collaboration project between the AI4CE Lab and an industry partner working in robotic systems and their applications. I couldn't say much since the actual project details are confidential unfortunately. However, we did manage to improve the baseline model's performance on key metrics tremendously via contrastive self-supervise approaches. 
 
 So instead, look at this funny GIF I found.
 
