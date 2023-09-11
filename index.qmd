@@ -7,6 +7,11 @@ format:
         # grid:
         #     margin-width: 150px
         page-layout: full
+# listing:
+#   id: sample-listings
+#   contents: research.qmd
+# #   sort: "date desc"
+#   type: table
 ---
 
 <!-- # About Me -->
