@@ -46,7 +46,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "This section is embarrassingly sparse as of now, please bear with me as I fill it up. If you would like to collaborate, please feel free to reach out anytime and I’ll try to revert back (almost) ASAP.\nMy primary research interests lie in the following areas:"
+    "text": "This section is embarrassingly sparse as of now, please bear with me as I fill it up. If you would like to collaborate, please feel free to reach out anytime and I’ll try to revert back (almost) ASAP.\nMy primary research interest can be summarized in this one sentence - I want to research and develop robots to aid extraterrestrial exploration and colonization (e.g. construction or exploration bots that will be widely use on Mars one day).\nWith the above idea in mind, the relevant tasks from an applicative point of view that I would like to tackle would be"
   },
   {
     "objectID": "research.html#principled-approach-towards-optimal-neural-radiance-field-learning-work-in-progress",
@@ -60,7 +60,7 @@
     "href": "research.html#sim2real-for-robotic-manipulation",
     "title": "Research",
     "section": "2 Sim2Real for Robotic Manipulation",
-    "text": "2 Sim2Real for Robotic Manipulation\nA collaboration project between the AI4CE Lab and an industry partner working in robotic systems and their applications. I couldn’t say much since the actual project is confidential unfortunately. However, we did manage to improve the baseline model’s performance on key metrics tremendously via contrastive self-supervise approaches.\nSo instead, look at this funny GIF I found.\n\n\n\n\n\nI couldn’t find the original source, so this is the best I can do for now - https://bostondynamics.com and https://i.imgur.com/YnrWZsL.gifv"
+    "text": "2 Sim2Real for Robotic Manipulation\nA collaboration project between the AI4CE Lab and an industry partner working in robotic systems and their applications. I couldn’t say much since the actual project details are confidential unfortunately. However, we did manage to improve the baseline model’s performance on key metrics tremendously via contrastive self-supervise approaches.\nSo instead, look at this funny GIF I found.\n\n\n\n\n\nI couldn’t find the original source, so this is the best I can do for now - https://bostondynamics.com and https://i.imgur.com/YnrWZsL.gifv"
   },
   {
     "objectID": "research.html#monocular-target-tracking-for-autonomous-uav",
