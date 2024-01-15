@@ -120,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#principled-approach-towards-optimal-neural-radiance-field-learning-work-in-progress" id="toc-principled-approach-towards-optimal-neural-radiance-field-learning-work-in-progress" class="nav-link active" data-scroll-target="#principled-approach-towards-optimal-neural-radiance-field-learning-work-in-progress"><span class="header-section-number">1</span> Principled Approach Towards Optimal Neural Radiance Field Learning (Work in Progress)</a></li>
+  <li><a href="#so-nerf-active-view-planning-for-nerf-using-surrogate-objectives" id="toc-so-nerf-active-view-planning-for-nerf-using-surrogate-objectives" class="nav-link active" data-scroll-target="#so-nerf-active-view-planning-for-nerf-using-surrogate-objectives"><span class="header-section-number">1</span> SO-NeRF: Active View Planning for NeRF using Surrogate Objectives</a></li>
   <li><a href="#sim2real-for-robotic-manipulation" id="toc-sim2real-for-robotic-manipulation" class="nav-link" data-scroll-target="#sim2real-for-robotic-manipulation"><span class="header-section-number">2</span> Sim2Real for Robotic Manipulation</a></li>
   <li><a href="#monocular-target-tracking-for-autonomous-uav" id="toc-monocular-target-tracking-for-autonomous-uav" class="nav-link" data-scroll-target="#monocular-target-tracking-for-autonomous-uav"><span class="header-section-number">3</span> Monocular Target Tracking for Autonomous UAV</a></li>
   </ul>
@@ -166,10 +166,14 @@ ul.task-list li input[type="checkbox"] {
 <li><b>Terraforming and Construction</b> - Multi-agent coordination and collaboration, Sim2Real to teach robots to perform new tasks in an adhoc manner via simulation and efficient learning via expert demonstration for learning on-the-fly, robotics for construction, etc</li>
 </ol>
 <p><br></p>
-<section id="principled-approach-towards-optimal-neural-radiance-field-learning-work-in-progress" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="principled-approach-towards-optimal-neural-radiance-field-learning-work-in-progress"><span class="header-section-number">1</span> Principled Approach Towards Optimal Neural Radiance Field Learning (Work in Progress)</h2>
-<p>An on-going research project I’m co-leading at the AI4CE Lab as of now. The title above is simply my own interpretation of a working title and will likely be subject to changes.</p>
-<p>Can’t say much more for now, so stay tuned!</p>
+<section id="so-nerf-active-view-planning-for-nerf-using-surrogate-objectives" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="so-nerf-active-view-planning-for-nerf-using-surrogate-objectives"><span class="header-section-number">1</span> SO-NeRF: Active View Planning for NeRF using Surrogate Objectives</h2>
+<strong>Abstract</strong><br>
+<div style="text-align: justify">
+Despite the great success of Neural Radiance Fields (NeRF), its data-gathering process remains vague with only a general rule of thumb of sampling as densely as possible. The lack of understanding of what actually constitutes good views for NeRF makes it difficult to actively plan a sequence of views that yield the maximal reconstruction quality. We propose Surrogate Objectives for Active Radiance Fields (SOAR), which is a set of interpretable functions that evaluates the goodness of views using geometric and photometric visual cues - surface coverage, geometric complexity, textural complexity, and ray diversity. Moreover, by learning to infer the SOAR scores from a deep network, SOARNet, we are able to effectively select views in mere seconds instead of hours, without the need for prior visits to all the candidate views or training any radiance field during such planning. Our experiments show SOARNet outperforms the baselines with ∼80x speed-up while achieving better or comparable reconstruction qualities. We finally show that SOAR is model-agnostic, thus it generalizes across fully neural-implicit to fully explicit approaches.
+</div>
+<p><br></p>
+<p><strong>Project Page</strong><br> <a href="https://ai4ce.github.io/SO-NeRF/">https://ai4ce.github.io/SO-NeRF/</a></p>
 <p><br></p>
 </section>
 <section id="sim2real-for-robotic-manipulation" class="level2 page-columns page-full" data-number="2">
