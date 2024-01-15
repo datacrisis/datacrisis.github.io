@@ -10,4 +10,4 @@ format:
 
 <center>Here is a copy of my public CV. For more information, feel free to reach out to me and I'll be happy to chat ☕️</center><br>
 
-<center><iframe src="./resources/Keifer_Lee_Resume_PhD.pdf" title="CV" width="960" height="1080"></iframe></center>
+<center><iframe src="./resources/Keifer_Lee_Resume_PhD__Public_.pdf" title="CV" width="960" height="1080"></iframe></center>

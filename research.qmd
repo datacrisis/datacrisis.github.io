@@ -3,6 +3,7 @@ title: "Research"
 number-sections: True
 ---
 
+
 This section is embarrassingly sparse as of now, please bear with me as I fill it up. If you would like to collaborate, please feel free to reach out anytime and I'll try to revert back (almost) ASAP. 
 
 My primary research interest can be summarized in this one sentence - <b><i>I want to research and develop robots to aid extraterrestrial exploration and colonization</b></i> (e.g. construction or exploration bots that will be widely use on Mars one day).
@@ -23,11 +24,14 @@ With the above idea in mind, the relevant tasks from an *applicative* point of v
 
 <br>
 
-## Principled Approach Towards Optimal Neural Radiance Field Learning (Work in Progress)
+## SO-NeRF: Active View Planning for NeRF using Surrogate Objectives
 
-An on-going research project I'm co-leading at the AI4CE Lab as of now. The title above is simply my own interpretation of a working title and will likely be subject to changes. 
+**Abstract**<br>
+<div style="text-align: justify"> Despite the great success of Neural Radiance Fields (NeRF), its data-gathering process remains vague with only a general rule of thumb of sampling as densely as possible. The lack of understanding of what actually constitutes good views for NeRF makes it difficult to actively plan a sequence of views that yield the maximal reconstruction quality. We propose Surrogate Objectives for Active Radiance Fields (SOAR), which is a set of interpretable functions that evaluates the goodness of views using geometric and photometric visual cues - surface coverage, geometric complexity, textural complexity, and ray diversity. Moreover, by learning to infer the SOAR scores from a deep network, SOARNet, we are able to effectively select views in mere seconds instead of hours, without the need for prior visits to all the candidate views or training any radiance field during such planning. Our experiments show SOARNet outperforms the baselines with ∼80x speed-up while achieving better or comparable reconstruction qualities. We finally show that SOAR is model-agnostic, thus it generalizes across fully neural-implicit to fully explicit approaches.</div>
+<br>
 
-Can't say much more for now, so stay tuned!
+**Project Page**<br>
+[https://ai4ce.github.io/SO-NeRF/](https://ai4ce.github.io/SO-NeRF/)
 
 <br>
 
